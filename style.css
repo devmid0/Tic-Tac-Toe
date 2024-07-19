@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #fbc2eb, #a6c0fe);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.box:hover {
+    background: #f4a261;
+    transform: scale(1.05);
+}
+
+.box a:hover {
+    color: #fff;
+}
+/* قواعد CSS لمصمم على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    #gameboard {
+      width: 90%; /* اجعل لوحة اللعبة تأخذ 90% من عرض الشاشة */
+      padding: 1rem;
+    }
+  
+    .box {
+      height: 100px;
+      width: 100px;
+      font-size: 4rem;
+      margin: 0.3rem;
+    }
+  
+    .container h1 {
+      font-size: 2.5rem;
+    }
+  
+    button {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .modal {
+      width: 90%;
+      height: auto;
+    }
+  
+    .content h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
